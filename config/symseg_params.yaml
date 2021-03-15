@@ -1,0 +1,11 @@
+pb_thres: 0.03
+paraFixPtThresh: 1       # smaller more influence of W_fixpt
+
+# for symmetry-constrained segmentation
+infVal: 20               # large value representing INF for maxflow
+nju: 5                   # for exp() of intensity contrast
+terminalW: 1e100         # terminal weights [should be large]
+sourceID: 2              # Object ID
+sinkID: 1                # Background ID
+sigma: 10
+betaFactor: 0.03         # 0: no effect, >0: expand, <0: contract [sign is inverted]
